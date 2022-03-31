@@ -1,3 +1,94 @@
 /*Colors:
-
+#d6c9a9 - beige
+#96b6b6 - bluegray lighter
+#568787 - bluegray darker
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(150, 182, 182, 0.76),
+      rgba(42, 66, 66, 0.196)
+    ),
+    url("/img/baking-header.png");
+  background-size: cover;
+  background-position: right;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.company-logo {
+  position: absolute;
+  top: 40px;
+  left: 1rem;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+}
+
+.heading-box {
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace;
+  backface-visibility: hidden;
+}
+
+.heading-primary {
+  display: block;
+  font-size: 4rem;
+  animation: moveInFromLeft 1s ease-out;
+}
+
+.heading-sub {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 15px;
+  animation: moveInFromRight 1s ease-out;
+}
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  90% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  90% {
+    transform: translateX(-5);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
