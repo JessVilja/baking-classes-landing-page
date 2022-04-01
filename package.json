@@ -1,5 +1,11 @@
 {
   "devDependencies": {
-    "node-sass": "^7.0.1"
-  }
+    "sass": "^1.49.10"
+  },
+  
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded src/sass:src/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/sass:src/css"
+    }
 }
+

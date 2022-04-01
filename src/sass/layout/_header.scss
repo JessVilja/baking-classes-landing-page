@@ -1,0 +1,31 @@
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-lighter, 0.76),
+      rgba($color-primary-darker, 0.196)
+    ),
+    url("../img/baking-header.png");
+  background-size: cover;
+  background-position: bottom right;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+  &__logo-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__logo {
+    width: 10rem;
+  }
+
+  &__heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70rem;
+  }
+}
