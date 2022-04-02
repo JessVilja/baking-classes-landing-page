@@ -26,8 +26,7 @@
   }
 }
 
-@mixin keyframes($moveInFromRight) {
-  @keyframes #{$moveInFromRight} {
+  @keyframes moveInFromRight {
     0% {
       opacity: 0;
       transform: translateX(10rem);
@@ -41,7 +40,3 @@
       opacity: 1;
     }
   }
-}
-@mixin animate($animation, $duration, $method, $times) {
-  animation: $animation $duration $method $times;
-}

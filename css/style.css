@@ -21,6 +21,18 @@
     transform: translate(0);
   }
 }
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  90% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
