@@ -1,42 +1,47 @@
 @keyframes moveInFromBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(2rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
   }
-  
-  @keyframes moveInFromLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-15rem);
-    }
-  
-    90% {
-      transform: translateX(0.5rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
-  
-  @keyframes moveInFromRight {
+}
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  90% {
+    transform: translateX(0.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@mixin keyframes($moveInFromRight) {
+  @keyframes #{$moveInFromRight} {
     0% {
       opacity: 0;
       transform: translateX(10rem);
     }
-  
+
     90% {
       transform: translateX(-0.5rem);
     }
-  
+
     100% {
       opacity: 1;
     }
   }
+}
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}

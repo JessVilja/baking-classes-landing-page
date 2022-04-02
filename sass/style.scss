@@ -1,5 +1,7 @@
 @import "abstracts/functions", "abstracts/mixins", "abstracts/variables";
 @import "base/animations", "base/base", "base/typography", "base/utilities";
 @import "components/button";
+@import "components/compilation";
+@import "layout/grid";
 @import "layout/header";
 @import "pages/home";
