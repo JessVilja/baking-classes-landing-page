@@ -42,14 +42,14 @@ body {
   font-family: "Space Mono", monospace;
   backface-visibility: hidden;
 }
-.heading-main-main--primary {
+.heading-main--primary {
   display: block;
-  font-size: 4rem;
+  font-size: 7rem;
   animation: moveInFromLeft 1s ease-out;
 }
-.heading-main-main--sub {
+.heading-main--sub {
   display: block;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 1.5rem;
   animation: moveInFromRight 1s ease-out;
 }
