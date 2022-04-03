@@ -56,12 +56,12 @@ body {
 }
 .heading-main--primary {
   display: block;
-  font-size: 7rem;
+  font-size: 4rem;
   animation: moveInFromLeft 1s ease-out;
 }
 .heading-main--sub {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 1.5rem;
   animation: moveInFromRight 1s ease-out;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   display: inline-block;
   background-image: linear-gradient(to right, #96b6b6, #2a4242);
@@ -307,20 +307,16 @@ h2 {
 }
 
 .baking-classes-section {
-  height: 85vh;
   padding: 10rem 0;
   background-image: linear-gradient(to right, rgba(150, 182, 182, 0.76), rgba(42, 66, 66, 0.196)), url("../img/cupcake.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .email-section {
   background-color: #f7f7f7;
-  padding: 15rem 0;
-  margin-top: -10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
