@@ -1,0 +1,26 @@
+.baking-classes-box {
+    background-color: rgba($color-white, .7);
+    font-size: 1.7rem;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 1.3rem 3rem rgba($color-black, .2);
+    transition: transform .4s;
+
+    &__icon {
+        font-size: 7rem;
+        margin: 1rem .5rem 1rem .5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right,
+                $color-primary-lighter,
+                $color-primary-darker);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.05);
+    }
+
+    &__text {}
+}
