@@ -22,10 +22,15 @@
   }
 
   &__heading-container {
-    display: flex;
+    /*display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 70rem;
+    height: 70rem; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }

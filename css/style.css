@@ -41,6 +41,10 @@
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -123,6 +127,14 @@ h2 {
   margin-bottom: 8rem;
 }
 
+.u-padding-bottom-medium {
+  padding-bottom: 5rem;
+}
+
+.u-padding-top-medium {
+  padding-top: 5rem;
+}
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -189,6 +201,20 @@ h2 {
   transform: translateY(0);
 }
 
+.btn-submit {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.btn-submit:hover, .btn-submit :focus, .btn-submit :active {
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+  transform: scale(1.06);
+}
+
 .compilation {
   position: relative;
 }
@@ -238,6 +264,52 @@ h2 {
 .baking-classes-box:hover {
   transform: translateY(-1rem) scale(1.05);
 }
+.email-box__form {
+  text-align: center;
+}
+.email-box__form ul {
+  list-style-type: none;
+}
+
+.email-input {
+  padding: 0.8rem;
+  margin: 1rem;
+  border: 0;
+  border-bottom: 1px solid #96b6b6;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.card {
+  perspective: 180rem;
+  -moz-perspective: 180rem;
+  position: relative;
+  height: 50rem;
+}
+.card__side {
+  font-size: 2rem;
+  height: 50rem;
+  transition: all 0.7s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__side--front {
+  background-color: #96b6b6;
+}
+.card__side--back {
+  background-color: #d6c9a9;
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -247,32 +319,32 @@ h2 {
 }
 
 .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 5rem) / 2);
 }
 
 .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 2 * 5rem) / 3);
 }
 
 .col-2-of-3 {
   width: calc(
-    2 * ((100% - 2 * 6rem) / 3) + 6rem
+    2 * ((100% - 2 * 5rem) / 3) + 5rem
   );
 }
 
 .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
+  width: calc((100% - 3 * 5rem) / 4);
 }
 
 .col-2-of-4 {
   width: calc(
-    2 * ((100% - 3 * 6rem) / 4) + 6rem
+    2 * ((100% - 3 * 5rem) / 4) + 5rem
   );
 }
 
 .col-3-of-4 {
   width: calc(
-    3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem
+    3 * ((100% - 3 * 5rem) / 4) + 2 * 5rem
   );
 }
 
@@ -293,11 +365,16 @@ h2 {
   max-width: 10rem;
 }
 .header__heading-container {
-  display: flex;
+  /*display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70rem;
+  height: 70rem; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .about-section {
@@ -317,6 +394,11 @@ h2 {
 
 .email-section {
   background-color: #f7f7f7;
+}
+
+.pricing-section {
+  background-color: #f7f7f7;
+  padding: 15rem 0 50rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
